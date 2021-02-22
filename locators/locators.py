@@ -11,6 +11,30 @@ class Locators:
     myaccount_link_xpath = '//*[@id="account"]/ul/li[1]/a'
     projects_link_class_name = 'projects'
 
+    # projects page objects
+    add_new_project_link_class_name = 'icon icon-add'
+
+    # add new project page object
+    project_name_textbox_id = 'project_name'
+    strong_text_format_button_class_name = 'jstb_strong'
+    ordered_list_text_format_button_class_name = 'jstSpacer'
+    project_description_textbox_id = 'project_description'
+    project_homepage_textbox_id = 'project_homepage'
+    project_is_public_checkbox_id = 'project_is_public'
+    project_inherit_members_checkbox_id = 'project_inherit_members'
+    issue_tracking_module_checkbox_value = 'issue_tracking'
+    time_tracking_module_checkbox_value = 'time_tracking'
+    news_module_checkbox_value = 'news'
+    documents_module_checkbox_value = 'documents'
+    files_module_checkbox_value = 'files'
+    wiki_module_checkbox_value = 'wiki'
+    forums_module_checkbox_value = 'boards'
+    calendar_module_checkbox_value = 'calendar'
+    gantt_module_checkbox_value = 'gantt'
+    bug_trackers_checkbox_xpath = '//*[@id="project_trackers"]/label[1]/input'
+    feature_trackers_checkbox_xpath = '//*[@id="project_trackers"]/label[2]/input'
+    support_trackers_checkbox_xpath = '//*[@id="project_trackers"]/label[3]/input'
+
     # my account page objects
     user_firstname_textbox_id = 'user_firstname'
     user_lastname_textbox_id = 'user_lastname'
@@ -25,6 +49,8 @@ class Locators:
     pref_warn_on_leaving_unsaved_checkbox_id = 'pref_warn_on_leaving_unsaved'
     delete_account_link_class_name = 'icon icon-del'
     change_password_link_xpath = '//*[@id="content"]/div[1]/a'
+    create_button_name = 'commit'
+    create_and_continue_button_name = 'continue'
 
     # change password page objects
     current_password_textbox_name = 'password'

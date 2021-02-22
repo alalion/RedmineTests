@@ -18,5 +18,5 @@ class HomePage:
     def click_myaccount_link(self):
         self.driver.find_element_by_xpath(Locators.myaccount_link_xpath).click()
 
-    def click_prolects_link(self):
+    def click_projects_link(self):
         self.driver.find_element_by_class_name(Locators.projects_link_class_name).click()

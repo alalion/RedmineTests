@@ -25,16 +25,16 @@ class TestAddingNewProject():
             login.enter_password(utils.PASSWORD)
             login.click_login()
 
-            homepage.click_prolects_link()
+            homepage.click_projects_link()
 
             prjcts_page = ProjectsPage(driver)
             prjcts_page.click_new_project_link()
 
             new_prjct_page = NewProjectPage(driver)
             new_prjct_page.enter_project_name('New Test Project Pangoline')
-            new_prjct_page.enter_project_identifier('Test Identifier')
+            # new_prjct_page.enter_project_identifier('Test Identifier')
+            driver.implicitly_wait(10)
             new_prjct_page.click_create_button()
-
 
 
             #assert actual_text == self.driver.find_element_by_id('flash_notice').get_attribute()

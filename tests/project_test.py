@@ -12,7 +12,6 @@ import moment
 class TestAddingNewProject():
 
     def test_adding_project(self):
-        print('7' * 999)
         try:
 
             driver = self.driver
@@ -26,15 +25,15 @@ class TestAddingNewProject():
             login.enter_password(utils.PASSWORD)
             login.click_login()
 
-            homepage.click_projects_link()
+            homepage.click_prolects_link()
 
-            projectspage = ProjectsPage(driver)
-            projectspage.click_new_project_link()
+            prjcts_page = ProjectsPage(driver)
+            prjcts_page.click_new_project_link()
 
-            newprojectpage = NewProjectPage(driver)
-            newprojectpage.enter_project_name()
-            newprojectpage.enter_identifier()
-            newprojectpage.click_create_button()
+            new_prjct_page = NewProjectPage(driver)
+            new_prjct_page.enter_project_name('New Test Project Pangoline')
+            new_prjct_page.enter_project_identifier('Test Identifier')
+            new_prjct_page.click_create_button()
 
 
 

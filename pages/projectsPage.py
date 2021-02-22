@@ -1,9 +1,9 @@
 from locators.locators import Locators
 
 
-class projectsPage:
+class ProjectsPage:
     def __init__(self, driver):
         self.driver = driver
 
-        self.projects_link_class_name = Locators.projects_link_class_name
-        self.add_new_project_link_class_name = Locators.add_new_project_link_class_name
+    def click_new_project_link(self):
+        self.driver.find_element_by_xpath(Locators.add_new_project_link_xpath).click()

@@ -32,25 +32,25 @@ class TestLogin():
         except AssertionError as error:
             print("Assertion error occurred")
             print(error)
-            currTime = moment.now().strftime('%H-%M-%S_%m-%d-%Y')
-            testName = utils.whoami()
-            screenshotName = testName + '_' + currTime
-            allure.attach(self.driver.get_screenshot_as_png(), name=screenshotName,
+            curr_time = moment.now().strftime('%H-%M-%S_%m-%d-%Y')
+            test_name = utils.whoami()
+            screenshot_name = test_name + '_' + curr_time
+            allure.attach(self.driver.get_screenshot_as_png(), name=screenshot_name,
                           attachment_type=allure.attachment_type.PNG)
             driver = self.driver
             driver.get_screenshot_as_file('/Users/alionap/PycharmProjects/AutomationFramework_1/screenshots/' +
-                                          screenshotName + '.png')
+                                          screenshot_name + '.png')
             raise
         except:
             print('There was an exception')
-            currTime = moment.now().strftime('%H-%M-%S_%m-%d-%Y')
-            testName = utils.whoami()
-            screenshotName = testName + '_' + currTime
-            allure.attach(self.driver.get_screenshot_as_png(), name=screenshotName,
+            curr_time = moment.now().strftime('%H-%M-%S_%m-%d-%Y')
+            test_name = utils.whoami()
+            screenshot_name = test_name + '_' + curr_time
+            allure.attach(self.driver.get_screenshot_as_png(), name=screenshot_name,
                           attachment_type=allure.attachment_type.PNG)
             driver = self.driver
             driver.get_screenshot_as_file('/Users/alionap/PycharmProjects/AutomationFramework_1/screenshots/' +
-                                          screenshotName + '.png')
+                                          screenshot_name + '.png')
             raise
 
         else:
